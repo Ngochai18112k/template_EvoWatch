@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evo Watch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <div id="header">
+            <div class="container">
+                <!-- Header__top -->
+                <div class="row header__top">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-4 header__home hide-on-mobile">
+                        <span>HOTLINE ĐẶT HÀNG:</span>
+                        <a href="tel:0123456789">0123 456 789</a>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-4 header__menu show-on-mobile">
+                        <a href="#" class="header__menu-link">
+                            <i class="far fa-bars header__menu-icon"></i>
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-4 header__logo">
+                        <a href="./index.html">
+                            <img src="./assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-4">
+                        <div class="header__acc">
+                            <div class="account hide-on-mobile">
+                                <a href="./Login/login.html">TÀI KHOẢN</a>
+                                <ul class="account__list">
+                                    <li class="account__item">
+                                        <a href="./Login/login.html">ĐĂNG NHẬP</a>
+                                    </li>
+                                    <li class="account__item">
+                                        <a href="./Login/signup.html">ĐĂNG KÍ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__cart">
+                                <a href="./Cart/cart.html">
+                                    <span class="hide-on-mobile">GIỎ HÀNG</span>
+                                    <i class="fas fa-cart-arrow-down header__cart-icon">
+                                        <span>0</span>
+                                    </i>
+                                </a>
+                                <div class="header__cart-box" hidden>
+                                    <div class="header__cart-box-item">
+                                        <img src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="">
+                                        <div class="header__cart-box-info">
+                                            <p class="header__cart-box-name">Crux</p>
+                                            <p class="header__cart-box-price">4.800.000₫</p>
+                                            <div class="header__cart-box-quality">
+                                                <button>+</button>
+                                                <input type="text" placeholder="1">
+                                                <button>-</button>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-box-close">
+                                            <i class="fa fa-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-box-total">
+                                        <span>Tổng cộng:</span>
+                                        <span class="header__cart-box-price">4.800.000₫</span>
+                                    </div>
+                                    <div class="header__cart-box-btn">
+                                        <a href="#">THANH TOÁN</a>
+                                        <a href="./Cart/cart.html">GIỎ HÀNG</a>
+                                    </div>
+                                </div>
+                                <div class="header__cart-box-no">
+                                    <p>Không có sản phẩm trong giỏ hàng.</p>
+                                </div>
+                            </div>
+                            <div class="search">
+                                <a href="#">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- Navbar -->
+                <div class="row hide-on-mobile">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <ul class="nav">
+                            <li class="nav__item">
+                                <a href="./index.html" class="nav__link active" title="Trang chủ">TRANG CHỦ</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./Intro/intro.html" class="nav__link has-childs" title="Giới thiệu">
+                                    GIỚI THIỆU
+                                    <i class="fal fa-chevron-down nav__icon"></i>
+                                </a>   
+                                <ul class="dropdown">
+                                    <li class="dropdown-item">
+                                        <a href="./Intro/replace.html" class="dropdown__link" title="Chính sách đổi hàng">Chính sách đổi hàng</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="./Intro/faq.html" class="dropdown__link" title="FAQ">FAQ</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="./Intro/pay.html" class="dropdown__link" title="Hướng dẫn thanh toán">Hướng dẫn thanh toán</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="./Intro/ship.html" class="dropdown__link" title="Chính sách vận chuyển">Chính sách vận chuyển</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="./Intro/shop.html" class="dropdown__link" title="Hệ thống cửa hàng">Hệ thống cửa hàng</a>
+                                    </li>
+                                </ul>                            
+                            </li>
+                            <li class="nav__item">
+                                <a href="./Product/men.html" class="nav__link has-childs" title="Nam">
+                                    NAM
+                                    <i class="fal fa-chevron-down nav__icon"></i>
+                                </a>
+                                <ul class="dropdown">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Đồng hồ KASHMIR">Đồng hồ KASHMIR</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Đồng hồ WEIMAR">Đồng hồ WEIMAR</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Đồng hồ COLOSSEUM">Đồng hồ COLOSSEUM</a>
+                                    </li>
+                                </ul>  
+                            </li>
+                            <li class="nav__item">
+                                <a href="./Product/women.html" class="nav__link has-childs" title="Nữ">
+                                    NỮ
+                                    <i class="fal fa-chevron-down nav__icon"></i>
+                                </a>
+                                <ul class="dropdown">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Bán chạy nhất">Bán chạy nhất</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Đồng hồ MELISSANI">Đồng hồ MELISSANI</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Đồng hồ MORAINE">Đồng hồ MORAINE</a>
+                                    </li>
+                                </ul>  
+                            </li>
+                            <li class="nav__item">
+                                <a href="./Product/extra.html" class="nav__link has-childs" title="Phụ kiện">
+                                    PHỤ KIỆN
+                                    <i class="fal fa-chevron-down nav__icon"></i>
+                                </a>
+                                <ul class="dropdown">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Dây đồng hồ">Dây đồng hồ</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Kính râm">Kính râm</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Kính mắt">Kính mắt</a>
+                                    </li>
+                                </ul>  
+                            </li>
+                            <li class="nav__item">
+                                <a href="./Product/products.html" class="nav__link has-childs" title="Sản phẩm">
+                                    SẢN PHẨM
+                                    <i class="fal fa-chevron-down nav__icon"></i>
+                                </a>
+                                <div class="row drop">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                        <a href="#" class="drop__tittle">NAM</a>
+                                        <ul class="drop__list">
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Đồng hồ KASHMIR">Đồng hồ KASHMIR</a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Đồng hồ WEIMAR">Đồng hồ WEIMAR</a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Đồng hồ COLOSSEUM">Đồng hồ COLOSSEUM</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                        <a class="drop__tittle">NỮ</a>
+                                        <ul class="drop__list">
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Bán chạy nhất">Bán chạy nhất</a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Đồng hồ MELISSANI">Đồng hồ MELLISSANI</a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Đồng hồ MORAINE">Đồng hồ MORAINE</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                        <span class="drop__tittle">PHỤ KIỆN</span>
+                                        <ul class="drop__list">
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Dây đồng hồ">Dây đồng hồ</a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Kính râm">Kính râm</a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Kính mắt">Kính mắt</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./News/news.html" class="nav__link" title="Tin tức">TIN TỨC</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./Contact/contact.html" class="nav__link" title="Liên hệ">LIÊN HỆ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="slider" style="background-image: url(./assets/img/slider/slider1.jpg);" title="Evo Watch"></div>
+
+
+        <!-- Content -->
+        <div id="content">
+            <div class="container">
+                <!-- Tittle -->
+                <div class="tittle">
+                    <div class="tittle__heading">
+                        <a href="#" class="tittle__heading-link" title="Sản phẩm Mới">
+                            SẢN PHẨM
+                            <strong>MỚI</strong>
+                        </a>
+                    </div>
+                    <div class="tittle__section hide-on-mobile">
+                        <a href="#" class="tittle__section-link" title="Nam">Nam</a>
+                        <a href="#" class="tittle__section-link" title="Nữ">Nữ</a>
+                        <a href="#" class="tittle__section-link" title="Phụ kiện">Phụ kiện</a>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div class="product">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                            <div class="product__card sale">
+                                <a href="./Product/product-item1.html" class="product__link"  title="Crux"></a>
+                                <span class="product-sale">- 11%</span> 
+                                <div class="product__img">
+                                    <div class="product__img-before" style="background-image: url(./assets/img/product/dong-ho-mvmt-crux-master.jpg);"></div>
+                                    <div class="product__img-after" style="background-image: url(./assets/img/product/dong-ho-mvmt-crux-2-master.jpg);"></div>
+                                </div>
+                                <span class="product__desc">CARBON</span>
+                                <span class="product__name">CRUX</span>
+                                <div class="product__price">
+                                    <span class="product__price-new">4.800.000₫</span>
+                                    <span class="product__price-old">5.400.000₫</span>
+                                </div>
+                                <a href="#" class="product__add" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                            <div class="product__card">
+                                <a href="#" class="product__link" title="Gunmetal rose"></a>
+                                <span class="product-sale"></span> 
+                                <div class="product__img">
+                                    <div class="product__img-before" style="background-image: url(./assets/img/product/1-rose-master.jpg);"></div>
+                                    <div class="product__img-after" style="background-image: url(./assets/img/product/2-rose-master.jpg);"></div>
+                                </div>
+                                <span class="product__desc"></span>
+                                <span class="product__name">GUNMETAL ROSE</span>
+                                <div class="product__price">
+                                    <span class="product__price-new">5.300.000₫</span>
+                                    <span class="product__price-old"></span>
+                                </div>
+                                <a href="#" class="product__add" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                            <div class="product__card">
+                                <a href="#" class="product__link" title="Magnolia"></a>
+                                <span class="product-sale"></span> 
+                                <div class="product__img">
+                                    <div class="product__img-before" style="background-image: url(./assets/img/product/dong-ho-mvmt-magnolia-master.jpg);"></div>
+                                    <div class="product__img-after" style="background-image: url(./assets/img/product/dong-ho-mvmt-magnolia-2-master.jpg);"></div>
+                                </div>
+                                <span class="product__desc"></span>
+                                <span class="product__name">MAGNOLIA</span>
+                                <div class="product__price">
+                                    <span class="product__price-new">4.100.000₫</span>
+                                    <span class="product__price-old"></span>
+                                </div>
+                                <a href="#" class="product__add" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                            <div class="product__card">
+                                <a href="#" class="product__link" title="Black link"></a>
+                                <span class="product-sale"></span> 
+                                <div class="product__img">
+                                    <div class="product__img-before" style="background-image: url(./assets/img/product/dong-ho-mvmt-black-link-master.jpg);"></div>
+                                    <div class="product__img-after" style="background-image: url(./assets/img/product/dong-ho-mvmt-black-link-2-master.jpg);"></div>
+                                </div>
+                                <span class="product__desc"></span>
+                                <span class="product__name">BLACK LINK</span>
+                                <div class="product__price">
+                                    <span class="product__price-new">3.400.000₫</span>
+                                    <span class="product__price-old"></span>
+                                </div>
+                                <a href="#" class="product__add" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Btn -->
+                <div class="button">
+                    <a href="#" class="btn btn__darkwhite" title="Xem tất cả Sản phẩm mới">XEM TẤT CẢ. SẢN PHẨM MỚI</a>
+                </div>
+
+                <!-- Banner -->
+                <div class="banner">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 banner__card">
+                            <div class="banner__img">
+                                <img src="./assets/img/banner/ant_index_banner_1.jpg" alt="">
+                            </div>
+                            <div class="banner__content">
+                                <span class="banner__text">Đồng hồ</span>
+                                <div class="banner__btn">
+                                    <a href="#" class="btn btn__white" title="Xem thêm">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 banner__card">
+                            <div class="banner__img">
+                                <img src="./assets/img/banner/ant_index_banner_2.jpg" alt="">
+                            </div>
+                            <div class="banner__content">
+                                <span class="banner__text">Đồng hồ</span>
+                                <div class="banner__btn">
+                                    <a href="#" class="btn btn__white" title="Xem thêm">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 banner__card">
+                            <div class="banner__img">
+                                <img src="./assets/img/banner/ant_index_banner_3.jpg" alt="">
+                            </div>
+                            <div class="banner__content">
+                                <span class="banner__text">Đồng hồ</span>
+                                <div class="banner__btn">
+                                    <a href="#" class="btn btn__white" title="Xem thêm">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tittle -->
+                <div class="tittle">
+                    <div class="tittle__heading">
+                        <a href="#" class="tittle__heading-link">
+                            DÀNH CHO
+                            <strong>NAM</strong>
+                        </a>
+                    </div>
+                    <div class="tittle__section hide-on-mobile">
+                        <a href="#" class="tittle__section-link" title="Nam">Nam</a>
+                        <a href="#" class="tittle__section-link" title="Nữ">Nữ</a>
+                        <a href="#" class="tittle__section-link" title="Phụ kiện">Phụ kiện</a>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div class="product">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                            <div class="product__card sale">
+                                <a href="#" class="product__link" title="Crux"></a>
+                                <span class="product-sale">- 11%</span> 
+                                <div class="product__img">
+                                    <div class="product__img-before" style="background-image: url(./assets/img/product/dong-ho-mvmt-crux-master.jpg);"></div>
+                                    <div class="product__img-after" style="background-image: url(./assets/img/product/dong-ho-mvmt-crux-2-master.jpg);"></div>
+                                </div>
+                                <span class="product__desc">CARBON</span>
+                                <span class="product__name">CRUX</span>
+                                <div class="product__price">
+                                    <span class="product__price-new">4.800.000₫</span>
+                                    <span class="product__price-old">5.400.000₫</span>
+                                </div>
+                                <a href="#" class="product__add" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                            <div class="product__card">
+                                <a href="#" class="product__link" title="Gunmetal rose"></a>
+                                <span class="product-sale"></span> 
+                                <div class="product__img">
+                                    <div class="product__img-before" style="background-image: url(./assets/img/product/1-rose-master.jpg);"></div>
+                                    <div class="product__img-after" style="background-image: url(./assets/img/product/2-rose-master.jpg);"></div>
+                                </div>
+                                <span class="product__desc"></span>
+                                <span class="product__name">GUNMETAL ROSE</span>
+                                <div class="product__price">
+                                    <span class="product__price-new">5.300.000₫</span>
+                                    <span class="product__price-old"></span>
+                                </div>
+                                <a href="#" class="product__add" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                            <div class="product__card">
+                                <a href="#" class="product__link" title="Magnolia"></a>
+                                <span class="product-sale"></span> 
+                                <div class="product__img">
+                                    <div class="product__img-before" style="background-image: url(./assets/img/product/dong-ho-mvmt-magnolia-master.jpg);"></div>
+                                    <div class="product__img-after" style="background-image: url(./assets/img/product/dong-ho-mvmt-magnolia-2-master.jpg);"></div>
+                                </div>
+                                <span class="product__desc"></span>
+                                <span class="product__name">MAGNOLIA</span>
+                                <div class="product__price">
+                                    <span class="product__price-new">4.100.000₫</span>
+                                    <span class="product__price-old"></span>
+                                </div>
+                                <a href="#" class="product__add" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                            <div class="product__card">
+                                <a href="#" class="product__link" title="Black link"></a>
+                                <span class="product-sale"></span> 
+                                <div class="product__img">
+                                    <div class="product__img-before" style="background-image: url(./assets/img/product/dong-ho-mvmt-black-link-master.jpg);"></div>
+                                    <div class="product__img-after" style="background-image: url(./assets/img/product/dong-ho-mvmt-black-link-2-master.jpg);"></div>
+                                </div>
+                                <span class="product__desc"></span>
+                                <span class="product__name">BLACK LINK</span>
+                                <div class="product__price">
+                                    <span class="product__price-new">3.400.000₫</span>
+                                    <span class="product__price-old"></span>
+                                </div>
+                                <a href="#" class="product__add" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Btn -->
+                <div class="button">
+                    <a href="#" class="btn btn__darkwhite" title="Xem tất cả Dành cho nam">XEM TẤT CẢ. DÀNH CHO NAM</a>
+                </div>
+
+                <!-- Range -->
+                <div class="range"></div>
+
+                <!-- Tittle -->
+                <div class="tittle">
+                    <div class="tittle__heading">
+                        <a href="#" class="tittle__heading-link">
+                            <strong>PHỤ KIỆN</strong>
+                            MỚI
+                        </a>
+                    </div>
+                    <div class="tittle__section hide-on-mobile">
+                        <a href="#" class="tittle__section-link" title="Nam">Nam</a>
+                        <a href="#" class="tittle__section-link" title="Nữ">Nữ</a>
+                        <a href="#" class="tittle__section-link" title="Phụ kiện">Phụ kiện</a>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div class="product">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                            <div class="product__card sale">
+                                <a href="#" class="product__link" title="Crux"></a>
+                                <span class="product-sale">- 11%</span> 
+                                <div class="product__img">
+                                    <div class="product__img-before" style="background-image: url(./assets/img/product/dong-ho-mvmt-crux-master.jpg);"></div>
+                                    <div class="product__img-after" style="background-image: url(./assets/img/product/dong-ho-mvmt-crux-2-master.jpg);"></div>
+                                </div>
+                                <span class="product__desc">CARBON</span>
+                                <span class="product__name">CRUX</span>
+                                <div class="product__price">
+                                    <span class="product__price-new">4.800.000₫</span>
+                                    <span class="product__price-old">5.400.000₫</span>
+                                </div>
+                                <a href="#" class="product__add" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                            <div class="product__card">
+                                <a href="#" class="product__link" title="Gunmetal rose"></a>
+                                <span class="product-sale"></span> 
+                                <div class="product__img">
+                                    <div class="product__img-before" style="background-image: url(./assets/img/product/1-rose-master.jpg);"></div>
+                                    <div class="product__img-after" style="background-image: url(./assets/img/product/2-rose-master.jpg);"></div>
+                                </div>
+                                <span class="product__desc"></span>
+                                <span class="product__name">GUNMETAL ROSE</span>
+                                <div class="product__price">
+                                    <span class="product__price-new">5.300.000₫</span>
+                                    <span class="product__price-old"></span>
+                                </div>
+                                <a href="#" class="product__add" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                            <div class="product__card">
+                                <a href="#" class="product__link" title="Magnolia"></a>
+                                <span class="product-sale"></span> 
+                                <div class="product__img">
+                                    <div class="product__img-before" style="background-image: url(./assets/img/product/dong-ho-mvmt-magnolia-master.jpg);"></div>
+                                    <div class="product__img-after" style="background-image: url(./assets/img/product/dong-ho-mvmt-magnolia-2-master.jpg);"></div>
+                                </div>
+                                <span class="product__desc"></span>
+                                <span class="product__name">MAGNOLIA</span>
+                                <div class="product__price">
+                                    <span class="product__price-new">4.100.000₫</span>
+                                    <span class="product__price-old"></span>
+                                </div>
+                                <a href="#" class="product__add" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                            <div class="product__card">
+                                <a href="#" class="product__link" title="Black link"></a>
+                                <span class="product-sale"></span> 
+                                <div class="product__img">
+                                    <div class="product__img-before" style="background-image: url(./assets/img/product/dong-ho-mvmt-black-link-master.jpg);"></div>
+                                    <div class="product__img-after" style="background-image: url(./assets/img/product/dong-ho-mvmt-black-link-2-master.jpg);"></div>
+                                </div>
+                                <span class="product__desc"></span>
+                                <span class="product__name">BLACK LINK</span>
+                                <div class="product__price">
+                                    <span class="product__price-new">3.400.000₫</span>
+                                    <span class="product__price-old"></span>
+                                </div>
+                                <a href="#" class="product__add" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Btn -->
+                <div class="button">
+                    <a href="#" class="btn btn__darkwhite" title="Xem tất cả Phụ kiện mới">XEM TẤT CẢ. PHỤ KIỆN MỚI</a>
+                </div>
+            </div>
+
+            <!-- Collection -->
+            <div class="collection" style="background-image: url(./assets/img/product/ant_product_bg.jpg);">
+                <div class="container collection__content">
+                    <div class="tittle">
+                        <div class="tittle__heading">
+                            <a href="#" class="tittle__heading-link" title="Bộ sưu tập Mùa hè">
+                                BỘ SƯU TẬP
+                                <strong>MÙA HÈ</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="collection__slide">
+                        <div class="collection__img" style="background-image: url(./assets/img/collection/index-evo-icon-1.jpg);">
+                            <a href="#" class="collection__img-link" title="Crux"></a>
+                            <span class="collection__img-dot"></span>
+                        </div>
+                        <div class="collection__product">
+                            <div class="product__card sale">
+                                <a href="#" class="product__link" title="Crux"></a>
+                                <span class="product-sale">- 11%</span> 
+                                <div class="product__img">
+                                    <div class="product__img-before" style="background-image: url(./assets/img/product/dong-ho-mvmt-crux-master.jpg);"></div>
+                                    <div class="product__img-after" style="background-image: url(./assets/img/product/dong-ho-mvmt-crux-2-master.jpg);"></div>
+                                </div>
+                                <span class="product__desc">CARBON</span>
+                                <span class="product__name">CRUX</span>
+                                <div class="product__price">
+                                    <span class="product__price-new">4.800.000₫</span>
+                                    <span class="product__price-old">5.400.000₫</span>
+                                </div>
+                                <a href="#" class="product__add" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News -->
+            <div class="news">
+                <div class="container">
+                    <div class="tittle">
+                        <div class="tittle__heading">
+                            <a href="#" class="tittle__heading-link">
+                                TIN TỨC 
+                                <strong>EVO WATCH</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 news__card">
+                            <a href="#" class="news__link" title="Mạnh mẽ & Cuốn hút với đồng hồ mặt rắn L'Duchen Silver Snake">
+                                <div class="news__img">
+                                    <img src="./assets/img/news/shop-dong-ho-seiko-chinh-hang-2.jpg"alt="">
+                                </div>
+                                <p class="news__tittle">Mạnh mẽ & Cuốn hút với đồng hồ mặt rắn L'Duchen Silver Snake</p>
+                                <p class="news__desc hide-on-mobile">Thương hiệu đồng hồ Thụy Sỹ L'Duchen đã mở rộng bộ sưu tập Art Collection của mình với mẫu đồng hồ mặt r...</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 news__card">
+                            <a href="#" class="news__link" title="Chuyên gia chia sẻ 4 cách phân biệt đồng hồ hàng hiệu thật và giả">
+                                <div class="news__img">
+                                    <img src="./assets/img/news/chronograph2048x2048.jpg" alt="">
+                                </div>
+                                <p class="news__tittle">Chuyên gia chia sẻ 4 cách phân biệt đồng hồ hàng hiệu thật và giả</p>
+                                <p class="news__desc hide-on-mobile">Việc sưu tầm và sở hữu những chiếc đồng hồ hàng hiệu xa xỉ luôn là một niềm đam mê của nhiều quý ông hiện ...</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 news__card">
+                            <a href="#" class="news__link" title="3 mẫu đồng hồ Chronograph6 kim mức giá trung bình đáng mua nhất">
+                                <div class="news__img">
+                                    <img src="./assets/img/news/ban-biet-gi-ve-dong-ho-chronograph.jpg" alt="">
+                                </div>
+                                <p class="news__tittle">3 mẫu đồng hồ Chronograph6 kim mức giá trung bình đáng mua nhất</p>
+                                <p class="news__desc hide-on-mobile">1. Đồng hồ Jacques Lemans JL-1-1654 Đứng đầu danh sách Top 3 đồng hồ 6 kim là mẫu đồng hồ Jacques Lema...</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 news__card">
+                            <a href="#" class="news__link" title="Tại sao bạn nên yêu công việc của mình?">
+                                <div class="news__img">
+                                    <img src="./assets/img/news/4-ways-to-create-a-more-stable-healthy-work-environment.jpeg"alt="">
+                                </div>
+                                <p class="news__tittle">Tại sao bạn nên yêu công việc của mình?</p>
+                                <p class="news__desc hide-on-mobile">Bạn có yêu công việc của bạn không? Tôi chắc rằng sẽ có rất nhiều câu trả lời là không. Vậy, nếu bạn không...</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Btn -->
+            <div class="button">
+                <a href="#" class="btn btn__darkwhite" title="Xem tất cả">XEM TẤT CẢ</a>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-12 col-sm-3">
+                        <a href="#">
+                            <img src="./assets/img/logo.png" alt="" class="footer__logo">
+                        </a>
+                        <ul class="list__menu">
+                            <li class="list__item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                30 Đường 2/9, Phường Bình Hiên, Quận Hải Châu, Đà Nẵng
+                            </li>
+                            <li class="list__item">
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:0123456789" class="list__link" title="0123456789">0123 456 789</a>
+                            </li>
+                            <li class="list__item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:evoteamthemes@gmail.com" class="list__link" title="evoteamthemes@gmail.com">evoteamthemes@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-12 col-sm-3">
+                        <span class="footer__tittle">MUA HÀNG</span>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#"  class="footer__link" title="Nam">NAM</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"  class="footer__link" title="Nữ">NỮ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"  class="footer__link" title="Phụ kiện">PHỤ KIỆN</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-12 col-sm-3">
+                        <span class="footer__tittle">DỊCH VỤ KHÁCH HÀNG</span>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#"  class="footer__link" title="Nam">NAM</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"  class="footer__link" title="Nữ">NỮ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"  class="footer__link" title="Phụ kiện">PHỤ KIỆN</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-12 col-sm-3">
+                        <span class="footer__tittle">ĐĂNG KÝ NHẮN TIN</span>
+                        <p class="footer__text">Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.</p>
+                        <input type="email" class="footer__input" placeholder="Email của bạn">
+                        <!-- Btn -->
+                        <div class="button">
+                            <a href="#" class="btn btn__darkwhite" style="width: 100%">ĐĂNG KÝ</a>
+                        </div>
+                        <ul class="footer__pay-list">
+                            <li class="footer__pay-item">
+                                <img src="./assets/img/payment/payment_1.svg" alt="">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/img/payment/payment_2.svg" alt="">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/img/payment/payment_3.svg" alt="">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/img/payment/payment_4.svg" alt="">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/img/payment/payment_5.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 footer__end">
+                        © <b>Bản quyền thuộc về</b> 
+                        Evo Themes
+                        <b> | Cung cấp bởi</b>
+                        <a href="#" title="Sapo">Sapo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="back-to-top" title="Lên đầu trang">
+                Lên đầu trang
+                <i class="far fa-long-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search -->
+    <div id="search">
+        <div class="search__overlay"></div>
+        <div class="search__box">
+            <div class="search__box-in">
+                <input type="text" placeholder="Bạn cần tìm gì hôm nay?">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="search__box-close">
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="modal__body-tittle">
+                <p>BẠN ĐÃ THÊM 
+                    <a href="">CRUX</a>
+                    VÀO GIỎ HÀNG
+                </p>
+            </div>
+            <div class="modal__body-noti">
+                <a href="#">GIỎ HÀNG CỦA BẠN CÓ 1 SẢN PHẨM</a>
+            </div>
+            <div class="modal__body-product">
+                <div class="body__product-text">
+                    <div class="body__product-text50">Sản phẩm</div>
+                    <div class="body__product-text15">Đơn giá</div>
+                    <div class="body__product-text15">Số lượng</div>
+                    <div class="body__product-text15">Thành tiền</div>
+                </div>
+                <div class="body__product-price">
+                    <div class="body__product-55">
+                        <div class="body__product-img">
+                            <a href="./Product/product-item1.html">
+                                <img src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="body__product-info">
+                            <p class="body__product-name">Crux</p>
+                            <p class="body__product-close">
+                                <i class="fas fa-times"></i>
+                                Bộ sản phẩm
+                            </p>
+                            <p class="body__product-add">
+                                <i class="fa fa-check"></i>
+                                Sản phẩm vừa thêm!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="body__product-15">4.800.000₫</div>
+                    <div class="body__product-15">
+                        <div class="body__quality">
+                            <button class="body__product-quality math">-</button>
+                            <input type="text" class="body__product-quality num" value="1">
+                            <button class="body__product-quality math">+</button>
+                        </div>
+                    </div>
+                    <div class="body__product-15">4.800.000₫</div>
+                </div>
+            </div>
+            <div class="modal__body-foot">
+                <a href="./index.html">
+                    <i class="fas fa-caret-left"></i>
+                    Tiếp tục mua hàng
+                </a>
+                <p>
+                    Thành tiền:
+                    <span>4.800.000₫</span>
+                </p>
+            </div>
+            <!-- Btn -->
+            <div class="button">
+                <a href="#" class="modal__body-btn">THANH TOÁN ĐƠN HÀNG</a>
+            </div>
+            <a href="#" class="modal__close">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* Log in - Sign up*/
+#login{
+    margin: 30px 0;
+}
+.login__tittle{
+    text-align: center;
+    font-size: 2.8rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0.3rem;
+}
+.login__tittle-text{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+}
+.login__desc{
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+}
+.login__social{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.login__social-link{
+    padding: 0 5px;
+}
+.login__social-link img{
+    width: 127px;
+    height: 35px;
+}
+.login__form{
+
+}
+.login__form-input{
+    padding-bottom: 30px;
+}
+.login__form-text{
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.login__form-text span{
+    color: red;
+}
+.login__form-in{
+    width: 100%;
+    height: 50px;
+    background-color: #f7f7f7;
+    color: #55595c;
+    font-size: 1.4rem;
+    border: 1px solid transparent;
+    outline: none;
+    box-shadow: none;
+    padding: 0 15px;
+}
+.btn.login__btn{
+    min-width: 290px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.login__form-forget{
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--hover-text);
+    font-weight: 500;
+    letter-spacing: 0.06rem;
+    padding: 15px 0;
+}
+.login__form-forget:hover{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.login__form-end{
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+.login__form-end a{
+    color: var(--hover-text);
+}
+.login__form-end a:hover{
+    text-decoration: none;
+    color: var(--text-color);
+}

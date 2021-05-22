@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evo Watch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/login-signup.css">
+    <link rel="stylesheet" href="../asset/css/responsive.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <div id="header">
+            <div class="container">
+                <!-- Header__top -->
+                <div class="row header__top">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-4 header__home hide-on-mobile">
+                        <span>HOTLINE ĐẶT HÀNG:</span>
+                        <a href="tel:0123456789">0123 456 789</a>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-4 header__menu show-on-mobile">
+                        <a href="#" class="header__menu-link">
+                            <i class="far fa-bars header__menu-icon"></i>
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-4 header__logo">
+                        <a href="../index.html">
+                            <img src="../assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-4">
+                        <div class="header__acc">
+                            <div class="account hide-on-mobile">
+                                <a href="#">TÀI KHOẢN</a>
+                                <ul class="account__list">
+                                    <li class="account__item">
+                                        <a href="./login.html">ĐĂNG NHẬP</a>
+                                    </li>
+                                    <li class="account__item">
+                                        <a href="./signup.html">ĐĂNG KÍ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__cart">
+                                <a href="#">
+                                    <span class="hide-on-mobile">GIỎ HÀNG</span>
+                                    <i class="fas fa-cart-arrow-down header__cart-icon">
+                                        <span>0</span>
+                                    </i>
+                                </a>
+                                <div class="header__cart-box" hidden>
+                                    <div class="header__cart-box-item">
+                                        <img src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="">
+                                        <div class="header__cart-box-info">
+                                            <p class="header__cart-box-name">Crux</p>
+                                            <p class="header__cart-box-price">4.800.000₫</p>
+                                            <div class="header__cart-box-quality">
+                                                <button>+</button>
+                                                <input type="text" placeholder="1">
+                                                <button>-</button>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-box-close">
+                                            <i class="fa fa-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-box-total">
+                                        <span>Tổng cộng:</span>
+                                        <span class="header__cart-box-price">4.800.000₫</span>
+                                    </div>
+                                    <div class="header__cart-box-btn">
+                                        <a href="#">THANH TOÁN</a>
+                                        <a href="./Cart/cart.html">GIỎ HÀNG</a>
+                                    </div>
+                                </div>
+                                <div class="header__cart-box-no">
+                                    <p>Không có sản phẩm trong giỏ hàng.</p>
+                                </div>
+                            </div>
+                            <div class="search">
+                                <a href="#">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- Navbar -->
+                <div class="row hide-on-mobile">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <ul class="nav">
+                            <li class="nav__item">
+                                <a href="../index.html" class="nav__link" title="Trang chủ">TRANG CHỦ</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link has-childs" title="Giới thiệu">
+                                    GIỚI THIỆU
+                                    <i class="fal fa-chevron-down nav__icon"></i>
+                                </a>   
+                                <ul class="dropdown">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Chính sách đổi hàng">Chính sách đổi hàng</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="FAQ">FAQ</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Hướng dẫn thanh toán">Hướng dẫn thanh toán</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Chính sách vận chuyển">Chính sách vận chuyển</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Hệ thống cửa hàng">Hệ thống cửa hàng</a>
+                                    </li>
+                                </ul>                            
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link has-childs" title="Nam">
+                                    NAM
+                                    <i class="fal fa-chevron-down nav__icon"></i>
+                                </a>
+                                <ul class="dropdown">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Đồng hồ KASHMIR">Đồng hồ KASHMIR</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Đồng hồ WEIMAR">Đồng hồ WEIMAR</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Đồng hồ COLOSSEUM">Đồng hồ COLOSSEUM</a>
+                                    </li>
+                                </ul>  
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link has-childs" title="Nữ">
+                                    NỮ
+                                    <i class="fal fa-chevron-down nav__icon"></i>
+                                </a>
+                                <ul class="dropdown">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Bán chạy nhất">Bán chạy nhất</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Đồng hồ MELISSANI">Đồng hồ MELISSANI</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Đồng hồ MORAINE">Đồng hồ MORAINE</a>
+                                    </li>
+                                </ul>  
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link has-childs" title="Phụ kiện">
+                                    PHỤ KIỆN
+                                    <i class="fal fa-chevron-down nav__icon"></i>
+                                </a>
+                                <ul class="dropdown">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Dây đồng hồ">Dây đồng hồ</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Kính râm">Kính râm</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown__link" title="Kính mắt">Kính mắt</a>
+                                    </li>
+                                </ul>  
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link has-childs" title="Sản phẩm">
+                                    SẢN PHẨM
+                                    <i class="fal fa-chevron-down nav__icon"></i>
+                                </a>
+                                <div class="row drop">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                        <a href="#" class="drop__tittle">NAM</a>
+                                        <ul class="drop__list">
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Đồng hồ KASHMIR">Đồng hồ KASHMIR</a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Đồng hồ WEIMAR">Đồng hồ WEIMAR</a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Đồng hồ COLOSSEUM">Đồng hồ COLOSSEUM</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                        <a class="drop__tittle">NỮ</a>
+                                        <ul class="drop__list">
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Bán chạy nhất">Bán chạy nhất</a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Đồng hồ MELISSANI">Đồng hồ MELLISSANI</a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Đồng hồ MORAINE">Đồng hồ MORAINE</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                        <span class="drop__tittle">PHỤ KIỆN</span>
+                                        <ul class="drop__list">
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Dây đồng hồ">Dây đồng hồ</a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Kính râm">Kính râm</a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a href="#" class="drop__link" title="Kính mắt">Kính mắt</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" title="Tin tức">TIN TỨC</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" title="Liên hệ">LIÊN HỆ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Direct -->
+        <div class="container">
+            <div class="row direct">
+                <ul class="direct__list">
+                    <li class="direct__item">
+                        <a href="../index.html" class="direct__link">Trang chủ</a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li class="direct__item">
+                        <span class="direct__text">Đăng nhập tài khoản</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Login-content -->
+        <div id="login">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2"></div>
+                    <div class="col-xl-8">
+                        <div class="login__tittle">ĐĂNG NHẬP TÀI KHOẢN</div>
+                        <div class="login__social">
+                            <a href="#" class="login__social-link">
+                                <img src="../assets/img/login-signup/fb-btn.svg" alt="">
+                            </a>
+                            <a href="#" class="login__social-link">
+                                <img src="../assets/img/login-signup/gp-btn.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="login__form">
+                            <div class="login__form-input">
+                                <p class="login__form-text">
+                                    EMAIL
+                                    <span>*</span>
+                                </p>
+                                <input type="email" class="login__form-in" placeholder="Nhập Địa chỉ Email" required>
+                            </div>
+                            <div class="login__form-input">
+                                <p class="login__form-text">
+                                    MẬT KHẨU
+                                    <span>*</span>
+                                </p>
+                                <input type="password" class="login__form-in" placeholder="Nhập Mật khẩu" required>
+                            </div>
+                            <div class="button">
+                                <a href="#" class="btn btn__darkwhite login__btn" title="Xem tất cả Sản phẩm mới">ĐĂNG NHẬP</a>
+                            </div>
+                            <a href="./forget.html" class="login__form-forget">Quên mật khẩu?</a>
+                            <p class="login__form-end">
+                                BẠN CHƯA CÓ TÀI KHOẢN. ĐĂNG KÝ
+                                <a href="./signup.html">TẠI ĐÂY.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-12 col-sm-3">
+                        <a href="#">
+                            <img src="./assets/img/logo.png" alt="" class="footer__logo">
+                        </a>
+                        <ul class="list__menu">
+                            <li class="list__item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                30 Đường 2/9, Phường Bình Hiên, Quận Hải Châu, Đà Nẵng
+                            </li>
+                            <li class="list__item">
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:0123456789" class="list__link" title="0123456789">0123 456 789</a>
+                            </li>
+                            <li class="list__item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:evoteamthemes@gmail.com" class="list__link" title="evoteamthemes@gmail.com">evoteamthemes@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-12 col-sm-3">
+                        <span class="footer__tittle">MUA HÀNG</span>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#"  class="footer__link" title="Nam">NAM</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"  class="footer__link" title="Nữ">NỮ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"  class="footer__link" title="Phụ kiện">PHỤ KIỆN</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-12 col-sm-3">
+                        <span class="footer__tittle">DỊCH VỤ KHÁCH HÀNG</span>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#"  class="footer__link" title="Nam">NAM</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"  class="footer__link" title="Nữ">NỮ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"  class="footer__link" title="Phụ kiện">PHỤ KIỆN</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-12 col-sm-3">
+                        <span class="footer__tittle">ĐĂNG KÝ NHẮN TIN</span>
+                        <p class="footer__text">Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.</p>
+                        <input type="email" class="footer__input" placeholder="Email của bạn">
+                        <!-- Btn -->
+                        <div class="button">
+                            <a href="#" class="btn btn__darkwhite" style="width: 100%">ĐĂNG KÝ</a>
+                        </div>
+                        <ul class="footer__pay-list">
+                            <li class="footer__pay-item">
+                                <img src="./assets/img/payment/payment_1.svg" alt="">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/img/payment/payment_2.svg" alt="">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/img/payment/payment_3.svg" alt="">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/img/payment/payment_4.svg" alt="">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/img/payment/payment_5.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 footer__end">
+                        © <b>Bản quyền thuộc về</b> 
+                        Evo Themes
+                        <b> | Cung cấp bởi</b>
+                        <a href="#" title="Sapo">Sapo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="back-to-top" title="Lên đầu trang">
+                Lên đầu trang
+                <i class="far fa-long-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
